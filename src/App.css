@@ -1,9 +1,10 @@
 .App {
-  text-align: center;
+  background-color: #404041;
+  min-height: 100vh;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 10vmin;
   pointer-events: none;
 }
 
@@ -15,24 +16,38 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 5vh;
   display: flex;
-  flex-direction: column;
+  flex-direction:row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content:left;
+  font-size: calc(10px + 1vmin);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
   from {
-    transform: rotate(0deg);
-  }
-  to {
     transform: rotate(360deg);
   }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.App-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardCastom {
+
+  height: auto;
+  width: 95%;
+  border-radius: 25px;
+  background-color: rgb(114, 113, 113);
+  display: flex;
+  padding-left: 15px;
+  font-size: calc(10px + 2vmin);
+  
 }
