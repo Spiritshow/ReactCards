@@ -12,32 +12,27 @@ const AbstractImg = () => {
   );
 }
 
-const Title = (text) =>{
-  return(
-    <h4 className='text'>{text}</h4>
-  );
-}
-
-const Description = (text) => {
-  return(
-    <p className='text'>{text}</p>
-  );
-}
-
-const Textcard = (title,description) =>{
+const BoxCard = (title, asd) =>{
   return(
     <div className='textcard'>
-      {title}
-      {description}
+      <h3>{title}</h3>
+      <asd/>
     </div>
   );
 }
 
-const Card = (image='./src/components/images/penpen.jpg',textcard) => {
+  const Card = ({image, title, description}) => {
   return(
-    <div className='cardCastom'>
-      <img src={image} className='image' alt='logo'/>
-      {textcard}
+    <div className='CastomCard ColorCard DerectionCard'>
+      <img src={image || './components/images/penpen.jpg'} className='image' alt='logo'/>
+      <div className='CastomTextBox'>
+        <h4>
+          {title}
+        </h4>
+        <p>
+          {description}
+        </p>
+      </div>
     </div>
   );
 }
@@ -53,7 +48,27 @@ function App() {
         </p>
       </header>
       <div className="App-body">
-      <Card textcard={<Textcard title={<Title text='1'/>} description={<Description text="2"/>}/>}/>
+        <Card title="1" description="2"/>
+        
+
+        <div className='CastomCard ColorBoxCard DerectionBoxCard'>
+          <h4>Навыки</h4>
+          <div>
+            <Card image={logo} title = "101" description="102"/>
+            <Card title = "101" description="102"/>
+            <Card title = "101" description="102"/>
+          </div>
+        </div>
+
+        <div className='CastomCard ColorBoxCard DerectionBoxCard'>
+          <h4>Магия</h4>
+          <div>
+            <Card image={logo} title = "101" description="102"/>
+            <Card title = "101" description="102"/>
+            <Card title = "101" description="102"/>
+          </div>
+        </div>
+
       </div>
     </div>
     </>
