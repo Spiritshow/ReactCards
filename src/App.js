@@ -2,7 +2,10 @@ import './App.css';
 import BoxCard from './components/BoxCard';
 import Card from './components/Card';
 import AbstractImg from './components/AbstractImg';
-import data from './components/dataCards/data';
+import heroCard from './components/dataCards/heroCard';
+import skils from './components/dataCards/Skils';
+import magic from './components/dataCards/Magic';
+
 
 function App() {
   return (
@@ -15,8 +18,10 @@ function App() {
         </p>
       </header>
       <div className="App-body">
-        <Card props={data[0]}/>
-        <BoxCard props={data}/>
+        <Card props={heroCard}/>
+        <BoxCard props={skils}/>
+        <BoxCard props={magic}/>
+        <image src="penpen.jpg" alt="log"/>
       </div>
     </div>
     </>
