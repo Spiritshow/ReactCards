@@ -14,7 +14,7 @@ function App() {
       <header className="App-header">
         <AbstractImg/>
         <p>
-          Learn React
+          Персонаж ДнД
         </p>
       </header>
       <div className="App-body">
