@@ -24,7 +24,7 @@ const ButtonControl = ({name}) => {
     }
 
     return(
-        <button onClick={processClick}>{name}</button>
+        <button className="AddCard CastomButton" onClick={processClick}>{name}</button>
     )
 }
 
