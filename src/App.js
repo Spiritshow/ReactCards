@@ -19,6 +19,7 @@ function App() {
       </header>
       <div className="App-body">
         <Card props={heroCard}/>
+        
         <BoxCard props={skils}/>
         <BoxCard props={magic}/>
         <image src="penpen.jpg" alt="log"/>
