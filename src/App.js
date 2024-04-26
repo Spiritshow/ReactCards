@@ -14,14 +14,15 @@ function App() {
       <header className="App-header">
         <AbstractImg/>
         <p>
-          React 
+          Персонаж Днд
         </p>
       </header>
       <div className="App-body">
         <Card props={heroCard}/>
+        
         <BoxCard props={skils}/>
         <BoxCard props={magic}/>
-        <image src="penpen.jpg" alt="log"/>
+        
       </div>
     </div>
     </>
